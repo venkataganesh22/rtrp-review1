@@ -35,7 +35,7 @@ if uploaded_file:
                 try:
                     converted = convert_image(image, target_format)
 
-                    st.image(Image.open(converted))
+                  st.image(Image.open(converted))
 
                 except Exception as e:
                     st.error(f"Error: {e}")
